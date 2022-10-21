@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //function b with global variable
+        var data = "50";
+        function a() {
+            document.write("Global Variable =>");
+            document.writeln(data);
+        }
+//functio b with local variable 
+        function b() {
+            var data = "100";
+            document.write("<br>")
+            document.write("Local Variable =>");
+            document.writeln(data);
+        }
+        a();
+        b();
+//For console items
+        console.log(`Menu Items
+Sandwich
+French Fries
+Potato wedges
+Donuts
+Pizza`)
+    </script>
+</body>
+
+</html>
